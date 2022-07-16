@@ -44,16 +44,18 @@ My Independent study is Advanced Hydrology and Subsidence Monitoring.
 
 </h1>
 
-<audio preload autoplay loop id="vd">
-     <source src="a7.mp3" type="audio/mpeg">
+
+
+
+<audio id="vd" src="a7.mp3" controls="controls" autoplay loop="true" hidden="true">
 </audio>
 
 <script type="text/javascript">
     window.onload = function(){
-             setInterval("toggleSound()",100);
+             setInterval("tonchSound()",100);
         }
 
-    function toggleSound() {
+    function tonchSound() {
                 var music = document.getElementById("vd");//獲取ID  
                     
                 if (music.paused) { //判讀是否播放  
