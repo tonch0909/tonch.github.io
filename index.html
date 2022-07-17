@@ -3,19 +3,9 @@
 <!DOCTYPE html>
 <html>
 
-window.addEventListener('scroll', () => {
-  const scrollPositionY = window.pageYOffset;
-  const moon = document.querySelector('.moon');
-  const stars = document.querySelectorAll('.star');
-  const parallaxScrollingElements = [moon, ...stars];
 
-  parallaxScrollingElements.forEach((element) => {
-    const elementMoveSpeed = Number(element.dataset.speed);
-    element.style.transform = `
-      translateY(${scrollPositionY * elementMoveSpeed}px)
-    `;
-  });
-});
+
+
 
 <body >
 
@@ -24,6 +14,7 @@ window.addEventListener('scroll', () => {
 <HEAD>
 <TITLE>tonch's github and website</TITLE>
 </HEAD>
+
 
 <style>
         html {
@@ -37,9 +28,21 @@ window.addEventListener('scroll', () => {
             background-position: center;
             background-size: cover;
         }
-    </style>
+</style>
 
+window.addEventListener('scroll', () => {
+  const scrollPositionY = window.pageYOffset;
+  const moon = document.querySelector('.moon');
+  const stars = document.querySelectorAll('.star');
+  const parallaxScrollingElements = [moon, ...stars];
 
+  parallaxScrollingElements.forEach((element) => {
+    const elementMoveSpeed = Number(element.dataset.speed);
+    element.style.transform = `
+      translateY(${scrollPositionY * elementMoveSpeed}px)
+    `;
+  });
+});
 
 <P ALIGN=CENTER>
 tonch's website
