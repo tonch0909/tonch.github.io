@@ -1,20 +1,32 @@
-
-
 <!DOCTYPE html>
 <html>
-
-
-
 
 
 <body >
 
 
 
+<div style="position:absolute; height:900px;overflow-y:auto">
+
+html {
+    overflow: -moz-hidden-unscrollable;
+    height: 100%;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    height: 100%;
+	width: calc(100vw + 18px);
+	overflow: auto;
+}
+
 <HEAD>
 <TITLE>tonch's github and website</TITLE>
 </HEAD>
-
 
 <style>
         html {
@@ -30,19 +42,7 @@
         }
 </style>
 
-window.addEventListener('scroll', () => {
-  const scrollPositionY = window.pageYOffset;
-  const moon = document.querySelector('.moon');
-  const stars = document.querySelectorAll('.star');
-  const parallaxScrollingElements = [moon, ...stars];
 
-  parallaxScrollingElements.forEach((element) => {
-    const elementMoveSpeed = Number(element.dataset.speed);
-    element.style.transform = `
-      translateY(${scrollPositionY * elementMoveSpeed}px)
-    `;
-  });
-});
 
 <P ALIGN=CENTER>
 tonch's website
@@ -82,7 +82,6 @@ My Independent study is Advanced Hydrology and Subsidence Monitoring.
 
 
 
-
 <audio preload autoplay loop id="vd">
      <source src="a7.mp3" type="audio/mpeg">
 </audio>
@@ -110,5 +109,7 @@ document.getElementById('vd').play()
 </script>
  
 <p>I'm hosted with github pages.</p>
+
+</div>
 </body>
 </html>
