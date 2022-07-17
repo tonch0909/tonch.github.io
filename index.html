@@ -1,7 +1,24 @@
+
+
 <!DOCTYPE html>
 <html>
 
+window.addEventListener('scroll', () => {
+  const scrollPositionY = window.pageYOffset;
+  const moon = document.querySelector('.moon');
+  const stars = document.querySelectorAll('.star');
+  const parallaxScrollingElements = [moon, ...stars];
+
+  parallaxScrollingElements.forEach((element) => {
+    const elementMoveSpeed = Number(element.dataset.speed);
+    element.style.transform = `
+      translateY(${scrollPositionY * elementMoveSpeed}px)
+    `;
+  });
+});
+
 <body >
+
 
 
 <HEAD>
@@ -58,6 +75,7 @@ My Independent study is Advanced Hydrology and Subsidence Monitoring.
 <br>
 &nbsp;&nbsp;<IMG SRC="C:\Users\tonch\Documents\GitHub\tonch.github.io\Java.jpg"WIDTH=177 HEIGHT=177 ALT="Java">
 </DIR>
+
 
 
 
