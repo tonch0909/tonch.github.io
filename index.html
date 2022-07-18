@@ -20,9 +20,6 @@
   </ul>
 -->
 
-<HEAD>
-<TITLE>tonch's website</TITLE>
-</HEAD>
 
 <style>
         html {
@@ -43,12 +40,6 @@
 
 
 
-<P ALIGN=CENTER>
-tonch's website
-</P>
-
-
-<br><br><br>
 
 
 
@@ -59,19 +50,22 @@ tonch's website
 <DIR>
 
 <center>
+tonch's website
+<br>
+
+
+<br><br>
 
 Welcome to my <a href="https://tonch0909.github.io/tonch.github.io/"style="color:black;">website</a> and <a href="https://github.com/tonch0909?fbclid=IwAR27Rsj5D24R8YLbr9iwIZ6I82ioGT-yRqMKpBbW3uYFb_CuNdhw7PjHpdg"style="color:black;">github</a>
 ! 
 
-<script>
 
-Today = Date();
-
-document.write("<b>"+Today+"</b>");
-
-</script>
 
 </center>
+
+
+
+
 <br> <br> <br> 
 
 
@@ -166,7 +160,18 @@ document.getElementById('vd').play()
 
 </body>
 
-<center><p>I'm hosted with github pages.</p></center>
+<center><p>I'm hosted with github pages.
+
+<div id="current_date"></p>
+<script>
+date = new Date();
+year = date.getFullYear();
+month = date.getMonth() + 1;
+day = date.getDate();
+document.getElementById("current_date").innerHTML =year + "/" + month + "/" + day;
+</script>
+
+</p></center>
 
 </html>
 </div>
