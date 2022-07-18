@@ -3,7 +3,7 @@
 <html>
 
 
-<body >
+<body>
 
 <div istyle="position:relative;height:900px; overflow-y:auto";>
 
@@ -27,6 +27,35 @@
         }
 
 </style>
+
+<audio preload autoplay loop id="vd">
+     <source src="a7.mp3" type="audio/mpeg">
+</audio>
+
+
+
+<script type="text/javascript">
+document.addEventListener('touchstart', function() {
+document.getElementById('vd').play()
+
+})
+    window.onload = function(){
+             setInterval("tonchSound()",100);
+        }
+
+    function tonchSound() {
+                var music = document.getElementById("vd");//獲取ID  
+                    
+                if (music.paused) { //判讀是否播放  
+                    music.paused=false;
+                    music.play(); //沒有就播放 
+                }    
+			
+        }
+
+
+</script>
+
 
 
 <P ALIGN=CENTER>
@@ -98,34 +127,11 @@ Welcome to my <a href="https://tonch0909.github.io/tonch.github.io/"style="color
 
 
 
-<audio preload autoplay loop id="vd">
-     <source src="a7.mp3" type="audio/mpeg">
-</audio>
 
 
+</div>
 
-<script type="text/javascript">
-document.addEventListener('touchstart', function() {
-document.getElementById('vd').play()
-
-})
-    window.onload = function(){
-             setInterval("tonchSound()",100);
-        }
-
-    function tonchSound() {
-                var music = document.getElementById("vd");//獲取ID  
-                    
-                if (music.paused) { //判讀是否播放  
-                    music.paused=false;
-                    music.play(); //沒有就播放 
-                }    
-			
-        }
-
-
-</script>
-
+</body>
 
 <br><br><br><br><br><br><br><br><br><br> 
 <br><br><br><br><br><br><br><br><br><br> 
@@ -138,15 +144,6 @@ document.getElementById('vd').play()
 <br><br><br><br><br><br><br><br><br><br> 
 <br><br><br><br><br><br><br><br><br><br> 
 
-</div>
-
-<center><p>I'm hosted with github pages.</p></center>
-
-</body>
-
-
-
-
 </html>
 
-
+<center><p>I'm hosted with github pages.</p></center>
