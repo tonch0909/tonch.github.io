@@ -64,13 +64,16 @@ document.getElementById('vd').play()
 
 </script>
 
+
+
+
 <body>
-  <div id="ant"></div>
+  <div id="ant" ></div>
 </body>
 
 </center>
 
-<script type="text/javascript">
+<script type="text/javascript" >
 let newTimer =()=> {
   let date = new Date();
   let str = date.toLocaleDateString();
@@ -89,6 +92,7 @@ let week=()=> {
 }
 
 window.onload =()=>{
+document.getElementById("ant").style.color = 'yellow';
   newTimer();
 }
 </script>
