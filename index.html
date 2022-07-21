@@ -33,6 +33,15 @@
 
 
 
+
+
+<P ALIGN=CENTER>
+tonch's website
+</P>
+
+<br> 
+<center>
+
 <script type="text/javascript">
 document.addEventListener('touchstart', function() {
 document.getElementById('vd').play()
@@ -55,15 +64,46 @@ document.getElementById('vd').play()
 
 </script>
 
+<body>
+  <div id="ant"></div>
+</body>
+
+</center>
+
+<script type="text/javascript">
+let newTimer =()=> {
+  let date = new Date();
+  let str = date.toLocaleDateString();
+  str += "  " + week();
+  str += "  " + date.toLocaleTimeString();
+  let odiv = document.getElementById("ant");
+  odiv.innerHTML = str;
+  setTimeout(newTimer, 1000);
+}    
+let week=()=> {
+  let d, day, x, s = " ";
+  x=["星期日", "星期一", "星期二","星期三", "星期四", "星期五","星期六"];
+  d = new Date();
+  day = d.getDay();
+  return (s += x[day]);
+}
+
+window.onload =()=>{
+  newTimer();
+}
+</script>
 
 
-<P ALIGN=CENTER>
-tonch's website
-</P>
 
 
 
-<br> <br> <br> 
+
+
+
+
+
+
+<br> <br> 
 
 
 <h1> 
@@ -214,7 +254,6 @@ document.getElementById("current_date").innerHTML =year + "/" + month + "/" + da
 I'm hosted with github pages.
 
 </center>
-
 
 
 </html>
