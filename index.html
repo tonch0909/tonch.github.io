@@ -62,12 +62,6 @@ snowStorm.useTwinkleEffect = true; // let the snow flicker in and out of view
 
 
 
-
-
-
-
-
-
 <P ALIGN=CENTER>
 
 
@@ -78,6 +72,12 @@ tonch.github.io
 
 <br> 
 <center>
+
+
+
+
+
+
 
 <script type="text/javascript">
 document.addEventListener('touchstart', function() {
@@ -176,16 +176,11 @@ Welcome to my <a href="https://tonch0909.github.io/tonch.github.io/"style="color
 <div class="tab_css">
 	<!-- TAB1 打包區塊 start -->
 	<input id="tab1" type="radio" name="tab" checked="checked"/>
-	<label for="tab1">頁籤 1</label>
+	<label for="tab1">tab1</label>
 	<div class="tab_content">
 <DIR>	
 
 
-<br> 
-
-
-
-<br>  
 <p>
 
 
@@ -263,10 +258,9 @@ Welcome to my <a href="https://tonch0909.github.io/tonch.github.io/"style="color
 
 	<!-- TAB2 打包區塊 start -->
 	<input id="tab2" type="radio" name="tab"/>
-	<label for="tab2">頁籤 2</label>
+	<label for="tab2">tab2</label>
 	<div class="tab_content">
 
-		<br><br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <LI><a href="https://zh.wikipedia.org/wiki/%E5%A4%A7%E5%9E%8B%E5%A4%9A%E4%BA%BA%E5%9C%A8%E7%BA%BF%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94%E6%B8%B8%E6%88%8F"style="color:black;">MMORPG</a> 
 <br><br><br>
@@ -302,7 +296,7 @@ Welcome to my <a href="https://tonch0909.github.io/tonch.github.io/"style="color
 
 	<!-- TAB3 打包區塊 start -->
 	<input id="tab3" type="radio" name="tab"/>
-	<label for="tab3">頁籤 3</label>
+	<label for="tab3">tab3</label>
 	<div class="tab_content">
 		第 3 個頁籤內容區塊<br/>
 
@@ -310,14 +304,7 @@ Welcome to my <a href="https://tonch0909.github.io/tonch.github.io/"style="color
 	<!-- TAB3 打包區塊 end -->
 </div>
 
-<style>
-	.tab_css{display:flex;flex-wrap:wrap;justify-content:center;}
-	.tab_css input{display:none}
-	.tab_css label{margin: 0 5px 5px 0; padding: 10px 16px; cursor: pointer; border-radius: 5px; background: #999; color: #fff; opacity: 0.5;}
-	.tab_content{order:1;display: none; width:100%; border-bottom: 3px solid #ddd; line-height: 1.6; font-size: .9em; padding: 15px; border: 1px solid #ddd; border-radius: 5px;}
-	.tab_css input:checked + label, .tab_css label:hover{opacity: 1; font-weight:bold;}
-	.tab_css input:checked + label + .tab_content{display: initial;}
-</style>
+
 
 
 
@@ -397,7 +384,14 @@ Welcome to my <a href="https://tonch0909.github.io/tonch.github.io/"style="color
 </div>
 
 
-
+<style>
+	.tab_css{display:flex;flex-wrap:wrap;justify-content:center;}
+	.tab_css input{display:none}
+	.tab_css label{margin: 0 5px 5px 0; padding: 10px 16px; cursor: pointer; border-radius: 5px; background: black; color: #fff; opacity: 0.5;}
+	.tab_content{order:1;display: none; width:100%; border-bottom: 3px solid #ddd; line-height:1; font-size: .9em; padding: 15px; border: 1px solid #ddd; border-radius: 5px;}
+	.tab_css input:checked + label, .tab_css label:hover{opacity: 1; font-weight:bold;}
+	.tab_css input:checked + label + .tab_content{display: initial;}
+</style>
 
 
 
