@@ -104,47 +104,12 @@ document.getElementById('vd').play()
 
 
 
-<script>
-
-	window.onload = function(){
-		
-		var oMessageBox = document.getElementById("messageBox");
-		var oInput = document.getElementById("myInput");
-		var oPostBtn = document.getElementById("doPost");
-		
-		oPostBtn.onclick = function(){
-			if(oInput.value){
-				//寫入發表留言的時間
-				var oTime = document.createElement("div");
-				oTime.className = "time";
-				var myDate = new  Date();
-				oTime.innerHTML = myDate.toLocaleString();
-				oMessageBox.appendChild(oTime);
-				
-				//寫入留言內容
-				var oMessageContent = document.createElement("div");
-				oMessageContent.className = "message_content";
-				oMessageContent.innerHTML = oInput.value;
-				oInput.value = "";
-				oMessageBox.appendChild(oMessageContent);
-			}
-			
-		}
-		
-	}
-
-</script>
 
 
 
 
-<body>
-	<div class="content">
-        <div class="title">使用者留言</div>
-        <div class="message_box" id="messageBox"></div>
-        <div><input id="myInput" type="text" placeholder="請輸入留言類容"><button id="doPost">提交</button></div>
-    </div>
-</body>
+
+
 
 
 
@@ -344,6 +309,8 @@ Welcome to my <a href="https://tonch0909.github.io/tonch.github.io/"style="color
 	<label for="tab3">tab3</label>
 	<div class="tab_content">
 		第 3 個頁籤內容區塊<br/>
+
+
 
 
 
