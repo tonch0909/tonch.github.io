@@ -154,35 +154,7 @@ document.getElementById("ant").style.color = 'AliceBlue';
 
  
  
-    
-    <p>您是本網頁的第<span id="visitorCount">0</span>位獨立訪客。</p>
-
-    <script>
-      let visitors = [];
-
-      function isNewVisitor(userAgent) {
-        for(let i = 0; i < visitors.length; i++) {
-          if(visitors[i].userAgent === userAgent) {
-            return false;
-          }
-        }
-        return true;
-      }
-
-      function trackVisitor() {
-        let userAgent = navigator.userAgent;
-        if(isNewVisitor(userAgent)) {
-          visitors.push({
-            userAgent: userAgent,
-            date: new Date()
-          });
-        }
-      }
-
-      trackVisitor();
-
-      document.getElementById("visitorCount").innerHTML = visitors.length;
-    </script>
+ 
   
 
 
